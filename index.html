@@ -1,0 +1,110 @@
+<html>
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой адаптивный сайт</title>
+  <style>
+    /* Основные стили */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    
+    /* Стили для мобильных устройств */
+    @media only screen and (max-width: 600px) {
+      /* Меню навигации */
+      .navbar {
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+      
+      /* Лого и название сайта в меню */
+      .navbar .logo {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      
+      /* Главный контейнер */
+      .container {
+        padding: 20px;
+        margin-top: 60px;
+      }
+      
+      /* Заголовок */
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      /* Текст */
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      /* Карточки с изображениями */
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      
+      .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      
+      .card h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">Мой сайт</a>
+    <button>&#9776;</button>
+  </nav>
+  
+  <div class="container">
+    <h1>Добро пожаловать на мой адаптивный сайт!</h1>
+    <p>Это пример адаптивного сайта с мобильной адаптацией и крутыми стилями.</p>
+    
+    <div class="card">
+      <img src="./images/shrek.jpg" alt="Картинка 1">
+      <h2>Шрэк на чиле</h2>
+    </div>
+    
+    <div class="card">
+      <img src="./images/shrekandfioana.jpg" alt="Картинка 2">
+      <h2>Это дама шрэка</h2>
+    </div>
+    
+    <div class="card">
+      <img src="./images/familyshrek.jpg" alt="Картинка 3">
+      <h2>На этой картинке Шрек, его жинька, и дети</h2>
+    </div>
+  </div>
+</body>
+</html>
